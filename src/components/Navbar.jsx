@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../public/image.png";
 import { MdOutlineFileDownload } from "react-icons/md";
-const Navbar = ({skills, handleScroll, aboutme, porfolio, contact, education}) => {
+const Navbar = ({skills, home, handleScroll, aboutme, porfolio, contact, education}) => {
   const pdf_file = "http://localhost:5173/CV.pdf" 
   const handleDownload = (url)=>{
     const filname = url.split("/").pop()
@@ -23,7 +23,7 @@ const Navbar = ({skills, handleScroll, aboutme, porfolio, contact, education}) =
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
         <li>
-              <NavLink className={({ isActive }) => (isActive ? "text-white" : "text-white")}>Home</NavLink>
+              <NavLink onClick={() => handleScroll(home)} className={({ isActive }) => (isActive ? "text-white" : "text-white")}>Home</NavLink>
             </li>
             <li>
               <NavLink className={({ isActive }) => (isActive ? "text-white" : "text-white")} onClick={() => handleScroll(aboutme)}>About Me</NavLink>
@@ -68,7 +68,7 @@ const Navbar = ({skills, handleScroll, aboutme, porfolio, contact, education}) =
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-64 p-2 shadow"
           >
             <li>
-              <NavLink className={({ isActive }) => (isActive ? "text-[#8750f7]" : "text-[#8750f7]")}>Home</NavLink>
+              <NavLink onClick={() => handleScroll(home)} className={({ isActive }) => (isActive ? "text-[#8750f7]" : "text-[#8750f7]")}>Home</NavLink>
             </li>
             <li>
               <NavLink className={({ isActive }) => (isActive ? "text-[#8750f7]" : "text-[#8750f7]")} onClick={() => handleScroll(aboutme)}>About Me</NavLink>

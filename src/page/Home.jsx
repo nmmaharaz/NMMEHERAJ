@@ -10,6 +10,7 @@ import Skill from "../components/Skill";
 
 const Home = () => {
 
+  const home = useRef(null);
   const aboutme = useRef(null);
   const skills = useRef(null);
   const education = useRef(null);
@@ -24,7 +25,9 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Navbar skills={skills} aboutme={aboutme} contact={contact} porfolio={porfolio} education={education} handleScroll={handleScroll}></Navbar>
+        <div ref={home}>
+        <Navbar skills={skills} home={home} aboutme={aboutme} contact={contact} porfolio={porfolio} education={education} handleScroll={handleScroll}></Navbar>
+        </div>
         <Hero></Hero>
         <div ref={aboutme}><AboutMe></AboutMe></div>
         <div ref={skills}

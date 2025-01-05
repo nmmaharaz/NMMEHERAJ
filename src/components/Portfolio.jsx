@@ -13,15 +13,15 @@ const Portfolio = () => {
           </span>
           <span className="text-5xl font-extrabold text-[#b7a0e4]">
             {" "}
-            Skills
+            Project
           </span>
         </p>
         <div className=" grid gap-8 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 ">
           <div className=" rounded-2xl bg-[#220f36] hover:bg-[#2f1452] transition duration-300 shadow-xl">
-            <figure className="px-8 pb-8 pt-8">
+            <figure className="px-8 pt-8">
               <img src={car} alt="Shoes" className="rounded-xl h-64" />
             </figure>
-            <div className="px-8 pt-4">
+            <div className="px-8 pb-8 pt-8">
               <p className="text-[#8750f7] text-2xl font-bold">Rental Car</p>
               <p className="text-white py-2 font-semibold">
                 A responsive car rental website.
@@ -41,7 +41,7 @@ const Portfolio = () => {
               <img src={gadget} alt="Shoes" className="rounded-xl h-64" />
             </figure>
             <div className="px-8 pb-8 pt-4">
-              <p className="text-[#8750f7] text-2xl font-bold">Rental Car</p>
+              <p className="text-[#8750f7] text-2xl font-bold">Gadget Shop</p>
               <p className="text-white font-semibold py-2">
                 A responsive car rental website.
               </p>
@@ -60,7 +60,7 @@ const Portfolio = () => {
               <img src={discount} alt="Shoes" className="rounded-xl h-64" />
             </figure>
             <div className="px-8 pb-8 pt-4">
-              <p className="text-[#8750f7] text-2xl font-bold">Rental Car</p>
+              <p className="text-[#8750f7] text-2xl font-bold">Game Review</p>
               <p className="text-white font-semibold py-2">
                 A responsive car rental website.
               </p>
